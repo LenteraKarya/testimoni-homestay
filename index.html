@@ -1,1 +1,1986 @@
-.
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Testimoni Home Stay Premium - Pengalaman nyaman tamu kami di akomodasi premium">
+    <meta name="keywords" content="home stay, akomodasi premium, testimoni, penginapan, liburan">
+    <title>Testimoni Home Stay Premium | Pengalaman Tamu Kami</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://example.com/path-to-your-logo.png" type="image/png">
+    <style>
+        :root {
+            --primary: #3498db;
+            --primary-dark: #2980b9;
+            --accent: #3498db;
+            --dark: #2c3e50;
+            --darker: #1a252f;
+            --light: #f9f9f9;
+            --lighter: #ffffff;
+            --text: #333;
+            --text-light: #777;
+            --text-lighter: #999;
+            --success: #38a169;
+            --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+            --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.2);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            line-height: 1.7;
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--dark);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        /* Header Styles */
+        header {
+            position: relative;
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 152, 219, 0.85)), 
+                        url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 120px 20px;
+            overflow: hidden;
+        }
+
+        .header-content {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .logo img {
+            height: 90px;
+            transition: var(--transition);
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+        }
+
+        .logo:hover img {
+            transform: scale(1.05) rotate(-5deg);
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .logo-main {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            text-align: left;
+            background: linear-gradient(to right, #fff, #c2e0ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-sub {
+            font-size: 1.1rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-top: 0.5rem;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            line-height: 1.7;
+            font-weight: 400;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.9rem 2.2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            border: 2px solid transparent;
+            cursor: pointer;
+            gap: 0.6rem;
+            margin: 0.5rem;
+            font-size: 1.05rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border-color: white;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--dark);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+            transition: var(--transition);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 20px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .nav-logo img {
+            height: 50px;
+            margin-right: 0.8rem;
+            transition: var(--transition);
+        }
+
+        .nav-logo:hover img {
+            transform: scale(1.05) rotate(-5deg);
+        }
+
+        .nav-logo span {
+            font-weight: 700;
+            color: var(--dark);
+            font-size: 1.1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: var(--dark);
+            cursor: pointer;
+            transition: var(--transition);
+            z-index: 1001;
+        }
+
+        .mobile-menu-toggle:hover {
+            color: var(--primary);
+            transform: rotate(90deg);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 350px;
+            height: 100vh;
+            background-color: var(--lighter);
+            box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: var(--transition);
+            padding: 6rem 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.8rem 1rem;
+            border-radius: var(--radius-sm);
+            transition: var(--transition);
+        }
+
+        .mobile-menu a:hover {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--primary);
+            transform: translateX(5px);
+        }
+
+        .mobile-menu-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .mobile-menu-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image-container {
+            width: 100%;
+            max-width: 500px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            transition: var(--transition);
+            border: 8px solid white;
+            aspect-ratio: 16/9;
+        }
+
+        .about-image-container:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .about-image-container:hover .about-image {
+            transform: scale(1.05);
+        }
+
+        .about-details {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+            line-height: 1.2;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+
+        .about-subtitle {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: block;
+            font-size: 1.3rem;
+        }
+
+        .about-description {
+            margin-bottom: 2.5rem;
+            color: var(--text);
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .about-description p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Facilities Section */
+        .facilities {
+            background-color: var(--light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            font-size: 2.5rem;
+            color: var(--dark);
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary), #5dade2);
+            margin: 1.5rem auto 0;
+            border-radius: 5px;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .facility-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid var(--primary);
+            text-align: center;
+        }
+
+        .facility-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), #5dade2);
+            transition: var(--transition);
+        }
+
+        .facility-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .facility-card:hover::before {
+            opacity: 1;
+        }
+
+        .facility-icon {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 2.5rem;
+            color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .facility-card:hover .facility-icon {
+            background-color: rgba(52, 152, 219, 0.2);
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .facility-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .facility-card p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background-color: white;
+            padding: 6rem 0;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            aspect-ratio: 1/1;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--light);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+            width: 100%;
+            position: relative;
+            transition: var(--transition);
+            border-top: 5px solid rgba(52, 152, 219, 0.3);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-top-color: var(--primary);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 2rem;
+            position: relative;
+            color: var(--text);
+            line-height: 1.8;
+            font-size: 1.1rem;
+            padding: 0 1rem;
+        }
+
+        .testimonial-text::before,
+        .testimonial-text::after {
+            content: '"';
+            color: var(--primary);
+            font-size: 2rem;
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .testimonial-text::before {
+            top: -10px;
+            left: -5px;
+        }
+
+        .testimonial-text::after {
+            bottom: -25px;
+            right: -5px;
+        }
+
+        .rating {
+            color: gold;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid rgba(52, 152, 219, 0.2);
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+
+        .testimonial-card:hover .testimonial-avatar {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+            font-size: 1.2rem;
+        }
+
+        .author-info p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        /* Testimonial Form */
+        .testimonial-form-container {
+            max-width: 800px;
+            margin: 5rem auto 0;
+            background: white;
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+
+        .testimonial-form-container h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            color: var(--dark);
+            position: relative;
+        }
+
+        .testimonial-form-container h3::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 4px;
+        }
+
+        .testimonial-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark);
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+            background-color: white;
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--primary);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+
+        .submit-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2.5rem;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: white;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .contact-info, .contact-form {
+            background: var(--light);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border-top: 5px solid rgba(52, 152, 219, 0.3);
+        }
+
+        .contact-info:hover, .contact-form:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-top-color: var(--primary);
+        }
+
+        .contact-info h3, .contact-form h3 {
+            margin-bottom: 2rem;
+            color: var(--dark);
+            font-size: 1.6rem;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .contact-info h3::after, .contact-form h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 4px;
+        }
+
+        .contact-detail {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-top: 0.3rem;
+            min-width: 30px;
+        }
+
+        .contact-text h4 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+            font-size: 1.1rem;
+        }
+
+        .contact-text p {
+            color: var(--text-light);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to bottom, var(--dark), var(--darker));
+            color: white;
+            padding: 6rem 0 0;
+            position: relative;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-col {
+            padding: 0 1rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            text-decoration: none;
+        }
+
+        .footer-logo img {
+            height: 50px;
+            margin-right: 1rem;
+            transition: var(--transition);
+        }
+
+        .footer-logo:hover img {
+            transform: scale(1.05) rotate(-5deg);
+        }
+
+        .footer-logo span {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: white;
+        }
+
+        .footer-about p {
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: var(--transition);
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .footer-col h3 {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-col h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 3px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .footer-links li i {
+            color: var(--primary);
+            font-size: 1rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 1.05rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 8px;
+        }
+
+        .footer-links .contact-info-item {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 2.5rem;
+            margin-top: 4rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1rem;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25D366;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            z-index: 100;
+            transition: var(--transition);
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .whatsapp-float:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+            animation: none;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 120px;
+            right: 40px;
+            background-color: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
+            z-index: 99;
+            transition: var(--transition);
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            background-color: var(--primary-dark);
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.4);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1200px) {
+            section {
+                padding: 5rem 0;
+            }
+            
+            .logo-main {
+                font-size: 2.2rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .logo-main {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .about-title {
+                font-size: 2.2rem;
+            }
+            
+            .facilities-grid, .testimonial-grid, .gallery-container {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            header {
+                padding: 100px 20px;
+            }
+
+            .logo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-text {
+                align-items: center;
+                margin-top: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .about-details {
+                text-align: left;
+            }
+
+            .about-title {
+                font-size: 2rem;
+            }
+            
+            .footer-col {
+                text-align: center;
+            }
+            
+            .footer-links {
+                text-align: left;
+                display: inline-block;
+            }
+            
+            .footer-col h3::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                font-size: 1.8rem;
+                bottom: 30px;
+                right: 30px;
+            }
+            
+            .back-to-top {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+                bottom: 100px;
+                right: 30px;
+            }
+            
+            .testimonial-form-container {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            section {
+                padding: 4rem 0;
+            }
+            
+            .logo-main {
+                font-size: 1.8rem;
+            }
+            
+            .logo img {
+                height: 70px;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+
+            .btn {
+                width: 100%;
+                margin: 0.5rem 0;
+                padding: 0.9rem 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.6rem;
+                margin-bottom: 3rem;
+            }
+            
+            .about-title {
+                font-size: 1.8rem;
+            }
+            
+            .facility-card, .testimonial-card, .contact-info, .contact-form, .testimonial-form-container {
+                padding: 1.5rem;
+            }
+            
+            .facilities-grid, .testimonial-grid, .gallery-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 1.6rem;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .back-to-top {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+                bottom: 85px;
+                right: 20px;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInLeft {
+            from { opacity: 0; transform: translateX(-30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        @keyframes fadeInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+
+        .fade-in-left {
+            animation: fadeInLeft 1s ease forwards;
+        }
+
+        .fade-in-right {
+            animation: fadeInRight 1s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        .delay-5 { animation-delay: 1s; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="https://example.com/path-to-your-logo.png" alt="Home Stay Premium Logo">
+                <span>Home Stay Premium</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#home" class="active">Beranda</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#facilities">Fasilitas</a>
+                <a href="#gallery">Galeri</a>
+                <a href="#testimonials">Testimoni</a>
+                <a href="#contact">Kontak</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#facilities">Fasilitas</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#contact">Kontak</a>
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    
+    <!-- Header -->
+    <header id="home">
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://example.com/path-to-your-logo.png" alt="Home Stay Premium Logo">
+                <div class="logo-text">
+                    <span class="logo-main">Home Stay Premium</span>
+                    <span class="logo-sub">Pengalaman Menginap yang Tak Terlupakan</span>
+                </div>
+            </div>
+            <p class="tagline fade-in">Temukan kenyamanan seperti di rumah sendiri dengan fasilitas premium dan pelayanan terbaik kami. Dengarkan apa kata tamu kami tentang pengalaman menginap mereka.</p>
+            
+            <div class="header-buttons fade-in delay-1">
+                <a href="#testimonials" class="btn btn-primary">
+                    <i class="fas fa-comment-alt"></i> Lihat Testimoni
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-calendar-alt"></i> Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Tentang Home Stay Premium</h2>
+            <div class="about-content">
+                <div class="about-image-container fade-in">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Home Stay Premium" class="about-image">
+                </div>
+                <div class="about-details fade-in delay-1">
+                    <h3 class="about-title">Home Stay Premium</h3>
+                    <span class="about-subtitle">Penginapan Berkualitas dengan Sentuhan Personal</span>
+                    <div class="about-description">
+                        <p>Home Stay Premium hadir untuk memberikan pengalaman menginap yang berbeda dari hotel biasa. Kami menawarkan akomodasi yang nyaman dengan sentuhan personal layaknya di rumah sendiri, namun dengan fasilitas dan pelayanan setara hotel bintang.</p>
+                        <p>Terletak di lokasi strategis dengan akses mudah ke berbagai destinasi wisata, Home Stay Premium menjadi pilihan utama bagi wisatawan yang mencari kenyamanan dan privasi selama berlibur atau bekerja.</p>
+                        <p>Setiap unit kami dirancang dengan cermat untuk memenuhi kebutuhan tamu modern, mulai dari keluarga, pasangan, hingga pebisnis yang membutuhkan kenyamanan ekstra selama perjalanan.</p>
+                        <p>Kami bangga dengan pelayanan ramah dan profesional dari staf kami yang siap membantu 24 jam untuk memastikan pengalaman menginap Anda sempurna dari awal hingga akhir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Facilities Section -->
+    <section class="facilities" id="facilities">
+        <div class="container">
+            <h2 class="section-title fade-in">Fasilitas Unggulan Kami</h2>
+            <div class="facilities-grid">
+                <div class="facility-card fade-in">
+                    <div class="facility-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="facility-title">WiFi Cepat</h3>
+                    <p>Internet berkecepatan tinggi dengan jangkauan di seluruh area home stay, termasuk ruang tamu, kamar tidur, dan area kolam renang.</p>
+                </div>
+                <div class="facility-card fade-in delay-1">
+                    <div class="facility-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3 class="facility-title">Kolam Renang Pribadi</h3>
+                    <p>Kolam renang dengan air bersih yang dirawat secara rutin, tersedia di setiap unit untuk kenyamanan dan privasi tamu.</p>
+                </div>
+                <div class="facility-card fade-in delay-2">
+                    <div class="facility-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="facility-title">Dapur Lengkap</h3>
+                    <p>Dapur modern dengan peralatan masak lengkap, memungkinkan Anda menyiapkan makanan sendiri seperti di rumah.</p>
+                </div>
+                <div class="facility-card fade-in delay-1">
+                    <div class="facility-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="facility-title">Parkir Pribadi</h3>
+                    <p>Area parkir aman dan terlindung untuk kendaraan pribadi Anda, termasuk fasilitas charging untuk kendaraan listrik.</p>
+                </div>
+                <div class="facility-card fade-in delay-2">
+                    <div class="facility-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="facility-title">Room Service 24 Jam</h3>
+                    <p>Layanan kamar 24 jam dengan menu makanan lezat dan kebutuhan lainnya yang bisa dipesan kapan saja.</p>
+                </div>
+                <div class="facility-card fade-in delay-3">
+                    <div class="facility-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="facility-title">Spa & Wellness</h3>
+                    <p>Layanan pijat dan perawatan tubuh profesional untuk membantu Anda bersantai setelah seharian beraktivitas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in">Galeri Home Stay</h2>
+            <p class="fade-in" style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Lihat sekilas keindahan dan kenyamanan yang kami tawarkan melalui galeri foto Home Stay Premium kami.</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1582719471389-93d765d452d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kamar Tidur" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Kamar Tidur Premium</h3>
+                        <p>Tempat istirahat yang nyaman dengan kasur berkualitas tinggi</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ruang Tamu" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Ruang Tamu Elegan</h3>
+                        <p>Area bersantai dengan desain modern dan nyaman</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in delay-2">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kolam Renang" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Kolam Renang Pribadi</h3>
+                        <p>Area berenang eksklusif dengan pemandangan indah</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Dapur" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Dapur Modern</h3>
+                        <p>Fasilitas memasak lengkap untuk kebutuhan kuliner Anda</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in delay-2">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Area Makan" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Area Makan</h3>
+                        <p>Tempat menikmati hidangan bersama keluarga atau teman</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in delay-3">
+                    <img src="https://images.unsplash.com/photo-1600566752227-8f5a6a6c5c5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pemandangan" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Pemandangan Indah</h3>
+                        <p>View menakjubkan dari balkon unit home stay kami</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">Testimoni Tamu Kami</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">
+                        "Pengalaman menginap yang luar biasa! Kamar sangat bersih, nyaman, dan fasilitasnya lengkap. Stafnya ramah dan sangat membantu. Kolam renang pribadi menjadi favorit anak-anak kami. Pasti akan kembali lagi!"
+                    </p>
+                    <div class="rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Siti Rahma">
+                        </div>
+                        <div class="author-info">
+                            <h4>Siti Rahma</h4>
+                            <p>Keluarga - 5 Malam</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in delay-1">
+                    <p class="testimonial-text">
+                        "Home Stay Premium benar-benar melebihi ekspektasi. Desain interiornya modern dan elegan, tempat tidur sangat nyaman, dan WiFi-nya cepat. Lokasinya strategis dekat dengan pusat kota tapi tetap tenang. Sangat direkomendasikan!"
+                    </p>
+                    <div class="rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Budi Santoso">
+                        </div>
+                        <div class="author-info">
+                            <h4>Budi Santoso</h4>
+                            <p>Wisatawan Bisnis - 3 Malam</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in delay-2">
+                    <p class="testimonial-text">
+                        "Ini adalah kali kedua kami menginap di sini dan pengalamannya tetap konsisten bagus. Pelayanan 24 jam sangat membantu ketika kami tiba larut malam. Dapur lengkap memudahkan kami menyiapkan makanan untuk anak kecil. Terima kasih!"
+                    </p>
+                    <div class="rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Dewi Lestari">
+                        </div>
+                        <div class="author-info">
+                            <h4>Dewi Lestari</h4>
+                            <p>Keluarga - 7 Malam</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in delay-1">
+                    <p class="testimonial-text">
+                        "Tempat yang sempurna untuk staycation! Kolam renang pribadi membuat liburan kami lebih istimewa. Desain kamar sangat Instagramable dan bersih. Stafnya responsif dan selalu siap membantu. Akan booking lagi untuk liburan berikutnya."
+                    </p>
+                    <div class="rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Rina Wijaya">
+                        </div>
+                        <div class="author-info">
+                            <h4>Rina Wijaya</h4>
+                            <p>Pasangan - 2 Malam</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in delay-2">
+                    <p class="testimonial-text">
+                        "Sebagai pebisnis yang sering traveling, saya sangat menghargai kenyamanan dan fasilitas kerja di Home Stay Premium. Meja kerja ergonomis, WiFi stabil, dan suasana yang tenang membuat produktivitas kerja tetap terjaga."
+                    </p>
+                    <div class="rating">★★★★☆</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="Andi Kurniawan">
+                        </div>
+                        <div class="author-info">
+                            <h4>Andi Kurniawan</h4>
+                            <p>Pebisnis - 10 Malam</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in delay-3">
+                    <p class="testimonial-text">
+                        "Kami menginap dengan grup besar (3 keluarga) dan sangat puas dengan pelayanan Home Stay Premium. Unitnya luas, bersih, dan fasilitasnya lengkap. Anak-anak senang dengan kolam renangnya. Staf membantu dari check-in sampai check-out."
+                    </p>
+                    <div class="rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Hendra Pratama">
+                        </div>
+                        <div class="author-info">
+                            <h4>Hendra Pratama</h4>
+                            <p>Grup Keluarga - 4 Malam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial Form -->
+            <div class="testimonial-form-container fade-in delay-4">
+                <h3>Bagikan Pengalaman Anda</h3>
+                <form class="testimonial-form" id="testimonialForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="testimonial-name">Nama Lengkap</label>
+                            <input type="text" id="testimonial-name" required placeholder="Masukkan nama lengkap Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="testimonial-stay">Jenis Kunjungan</label>
+                            <select id="testimonial-stay" required>
+                                <option value="" disabled selected>Pilih jenis kunjungan</option>
+                                <option value="family">Keluarga</option>
+                                <option value="couple">Pasangan</option>
+                                <option value="business">Bisnis</option>
+                                <option value="friends">Teman</option>
+                                <option value="solo">Solo Traveler</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="testimonial-duration">Durasi Menginap</label>
+                            <input type="text" id="testimonial-duration" required placeholder="Contoh: 2 Malam">
+                        </div>
+                        <div class="form-group">
+                            <label for="testimonial-rating">Rating</label>
+                            <select id="testimonial-rating" required>
+                                <option value="" disabled selected>Pilih rating</option>
+                                <option value="5">★★★★★ - Sangat Puas</option>
+                                <option value="4">★★★★☆ - Puas</option>
+                                <option value="3">★★★☆☆ - Cukup</option>
+                                <option value="2">★★☆☆☆ - Kurang Puas</option>
+                                <option value="1">★☆☆☆☆ - Tidak Puas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="testimonial-message">Testimoni Anda</label>
+                        <textarea id="testimonial-message" required placeholder="Bagikan pengalaman menginap Anda di Home Stay Premium"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Kirim Testimoni
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Hubungi Kami</h2>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3>Informasi Kontak</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Alamat</h4>
+                            <p>Jl. Raya Kuta No. 123<br>Badung, Bali 80361<br>Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Telepon/WhatsApp</h4>
+                            <p>+62 361 1234567</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@homestaypremium.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-clock contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Jam Operasional</h4>
+                            <p>Setiap Hari: 24 Jam<br>Resepsionis: 07.00 - 22.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form fade-in delay-1">
+                    <h3>Form Pemesanan</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" required placeholder="Masukkan nama lengkap Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" required placeholder="Masukkan alamat email aktif">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" required placeholder="Masukkan nomor telepon/WhatsApp">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Check-in</label>
+                                <input type="date" id="checkin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check-out</label>
+                                <input type="date" id="checkout" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Jumlah Tamu</label>
+                            <select id="guests" required>
+                                <option value="" disabled selected>Pilih jumlah tamu</option>
+                                <option value="1">1 Orang</option>
+                                <option value="2">2 Orang</option>
+                                <option value="3">3 Orang</option>
+                                <option value="4">4 Orang</option>
+                                <option value="5+">5+ Orang</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan Tambahan</label>
+                            <textarea id="message" placeholder="Permintaan khusus atau pertanyaan"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Kirim Permintaan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col footer-about fade-in">
+                    <a href="#" class="footer-logo">
+                        <img src="https://example.com/path-to-your-logo.png" alt="Home Stay Premium Logo">
+                        <span>Home Stay Premium</span>
+                    </a>
+                    <p>Memberikan pengalaman menginap premium dengan kenyamanan seperti di rumah sendiri. Fasilitas lengkap, pelayanan terbaik, dan lokasi strategis untuk liburan atau bisnis Anda.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/6281234567890" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col fade-in delay-1">
+                    <h3>Tautan Cepat</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-chevron-right"></i><a href="#home">Beranda</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#about">Tentang Kami</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#facilities">Fasilitas</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#gallery">Galeri</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#testimonials">Testimoni</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col fade-in delay-2">
+                    <h3>Hubungi Kami</h3>
+                    <div class="footer-links">
+                        <div class="contact-info-item"><i class="fas fa-phone"></i> +62 361 1234567</div>
+                        <div class="contact-info-item"><i class="fas fa-envelope"></i> info@homestaypremium.com</div>
+                        <div class="contact-info-item"><i class="fas fa-map-marker-alt"></i> Jl. Raya Kuta No. 123, Bali</div>
+                        <div class="contact-info-item"><i class="fas fa-clock"></i> Setiap Hari, 24 Jam</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright fade-in delay-3">
+                &copy; 2025 Home Stay Premium. Semua hak dilindungi. | Dibangun dengan <i class="fas fa-heart" style="color: #e74c3c;"></i> untuk Kenyamanan Anda
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank" aria-label="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            mobileMenuOverlay.classList.toggle('active');
+            this.classList.toggle('open');
+            
+            // Change icon between bars and times
+            if (mobileMenu.classList.contains('active')) {
+                this.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                this.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        mobileMenuOverlay.addEventListener('click', function() {
+            mobileMenu.classList.remove('active');
+            this.classList.remove('active');
+            mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Terkirim!';
+                
+                // Show success message
+                const successAlert = document.createElement('div');
+                successAlert.style.position = 'fixed';
+                successAlert.style.top = '20px';
+                successAlert.style.right = '20px';
+                successAlert.style.backgroundColor = '#38a169';
+                successAlert.style.color = 'white';
+                successAlert.style.padding = '15px 25px';
+                successAlert.style.borderRadius = '8px';
+                successAlert.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                successAlert.style.zIndex = '1000';
+                successAlert.style.animation = 'fadeIn 0.5s ease';
+                successAlert.innerHTML = '<i class="fas fa-check-circle"></i> Permintaan pemesanan Anda telah terkirim! Kami akan segera menghubungi Anda untuk konfirmasi.';
+                
+                document.body.appendChild(successAlert);
+                
+                // Remove alert after 5 seconds
+                setTimeout(() => {
+                    successAlert.style.animation = 'fadeOut 0.5s ease';
+                    setTimeout(() => {
+                        document.body.removeChild(successAlert);
+                    }, 500);
+                }, 5000);
+                
+                // Reset form after 2 seconds
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            }, 1500);
+        });
+
+        // Testimonial form submission
+        document.getElementById('testimonialForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim...';
+            submitBtn.disabled = true;
+            
+            // Simulate API call
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Terkirim!';
+                
+                // Show success message
+                const successAlert = document.createElement('div');
+                successAlert.style.position = 'fixed';
+                successAlert.style.top = '20px';
+                successAlert.style.right = '20px';
+                successAlert.style.backgroundColor = '#38a169';
+                successAlert.style.color = 'white';
+                successAlert.style.padding = '15px 25px';
+                successAlert.style.borderRadius = '8px';
+                successAlert.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+                successAlert.style.zIndex = '1000';
+                successAlert.style.animation = 'fadeIn 0.5s ease';
+                successAlert.innerHTML = '<i class="fas fa-check-circle"></i> Testimoni Anda telah terkirim! Terima kasih atas masukan Anda.';
+                
+                document.body.appendChild(successAlert);
+                
+                // Remove alert after 5 seconds
+                setTimeout(() => {
+                    successAlert.style.animation = 'fadeOut 0.5s ease';
+                    setTimeout(() => {
+                        document.body.removeChild(successAlert);
+                    }, 500);
+                }, 5000);
+                
+                // Reset form after 2 seconds
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            }, 1500);
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.08)';
+            } else {
+                nav.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                nav.style.boxShadow = 'none';
+            }
+            
+            // Back to top button
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+            
+            // Active nav link based on scroll position
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a, .mobile-menu a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Back to top functionality
+        document.getElementById('backToTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animation on scroll
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translate(0)';
+                }
+            });
+        };
+
+        // Initialize animations
+        window.addEventListener('load', function() {
+            const elements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                
+                if (element.classList.contains('fade-in')) {
+                    element.style.transform = 'translateY(30px)';
+                } else if (element.classList.contains('fade-in-left')) {
+                    element.style.transform = 'translateX(-30px)';
+                } else if (element.classList.contains('fade-in-right')) {
+                    element.style.transform = 'translateX(30px)';
+                }
+                
+                element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            });
+            
+            animateOnScroll();
+        });
+
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+</body>
+</html>
