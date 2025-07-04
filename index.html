@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Konsultasi Bisnis Jualan Kita - Panduan profesional untuk pengembangan UMKM di platform Jualan Kita">
-    <meta name="keywords" content="jualan kita, konsultan bisnis, umkm, pemasaran digital, toko online">
-    <title>Owner Jualan Kita | Ahli Pengembangan UMKM Digital</title>
+    <meta name="description" content="Testimoni Home Stay Premium - Pengalaman nyaman tamu kami di akomodasi premium">
+    <meta name="keywords" content="home stay, akomodasi premium, testimoni, penginapan, liburan">
+    <title>Testimoni Home Stay Premium | Pengalaman Tamu Kami</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://raw.githubusercontent.com/LenteraKarya/jualan-kita/main/assets/images/logo-jualan-kita.png" type="image/png">
+    <link rel="icon" href="https://raw.githubusercontent.com/LenteraKarya/homestay/main/assets/images/logo-homestay.png" type="image/png">
     <style>
         :root {
-            --primary: #e67e22;
-            --primary-dark: #d35400;
-            --accent: #e67e22;
+            --primary: #3498db;
+            --primary-dark: #2980b9;
+            --accent: #3498db;
             --dark: #2c3e50;
             --darker: #1a252f;
             --light: #f9f9f9;
@@ -70,8 +70,8 @@
         header {
             position: relative;
             min-height: 100vh;
-            background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(230, 126, 34, 0.85)), 
-                        url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.95), rgba(52, 152, 219, 0.85)), 
+                        url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
             color: white;
             display: flex;
             align-items: center;
@@ -118,7 +118,7 @@
             font-weight: 800;
             line-height: 1.2;
             text-align: left;
-            background: linear-gradient(to right, #fff, #f8d7b0);
+            background: linear-gradient(to right, #fff, #c2e0ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -310,7 +310,7 @@
         }
 
         .mobile-menu a:hover {
-            background-color: rgba(230, 126, 34, 0.1);
+            background-color: rgba(52, 152, 219, 0.1);
             color: var(--primary);
             transform: translateX(5px);
         }
@@ -333,46 +333,237 @@
             visibility: visible;
         }
 
-        /* Jualan Kita Section */
-        .jualan-kita {
+        /* About Section */
+        .about {
             background-color: white;
         }
 
-        .jk-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            align-items: center;
+            justify-content: center;
         }
 
-        .jk-content p {
-            margin-bottom: 2rem;
+        .about-image-container {
+            width: 100%;
+            max-width: 500px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            transition: var(--transition);
+            border: 8px solid white;
+            aspect-ratio: 16/9;
+        }
+
+        .about-image-container:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .about-image-container:hover .about-image {
+            transform: scale(1.05);
+        }
+
+        .about-details {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-title {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+            line-height: 1.2;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+
+        .about-subtitle {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: block;
+            font-size: 1.3rem;
+        }
+
+        .about-description {
+            margin-bottom: 2.5rem;
+            color: var(--text);
             font-size: 1.1rem;
             line-height: 1.8;
         }
 
-        .jk-content ul {
-            text-align: left;
-            max-width: 600px;
-            margin: 3rem auto;
-            list-style-position: inside;
-            padding-left: 0;
+        .about-description p {
+            margin-bottom: 1.5rem;
         }
 
-        .jk-content li {
-            margin-bottom: 1.2rem;
+        /* Facilities Section */
+        .facilities {
+            background-color: var(--light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            font-size: 2.5rem;
+            color: var(--dark);
             position: relative;
-            padding-left: 2rem;
-            list-style-type: none;
-            line-height: 1.8;
-            font-size: 1.05rem;
+            padding-bottom: 1.5rem;
         }
 
-        .jk-content li::before {
-            content: "▹";
-            color: var(--primary);
-            font-weight: bold;
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(to right, var(--primary), #5dade2);
+            margin: 1.5rem auto 0;
+            border-radius: 5px;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .facility-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid var(--primary);
+            text-align: center;
+        }
+
+        .facility-card::before {
+            content: '';
             position: absolute;
+            top: 0;
             left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), #5dade2);
+            transition: var(--transition);
+        }
+
+        .facility-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .facility-card:hover::before {
+            opacity: 1;
+        }
+
+        .facility-icon {
+            width: 100px;
+            height: 100px;
+            background-color: rgba(52, 152, 219, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 2.5rem;
+            color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .facility-card:hover .facility-icon {
+            background-color: rgba(52, 152, 219, 0.2);
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .facility-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            font-weight: 700;
+        }
+
+        .facility-card p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background-color: white;
+            padding: 6rem 0;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            aspect-ratio: 1/1;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-image {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-caption {
+            opacity: 1;
         }
 
         /* Testimonials */
@@ -394,7 +585,7 @@
             width: 100%;
             position: relative;
             transition: var(--transition);
-            border-top: 5px solid rgba(230, 126, 34, 0.3);
+            border-top: 5px solid rgba(52, 152, 219, 0.3);
         }
 
         .testimonial-card:hover {
@@ -450,21 +641,30 @@
             height: 80px;
             border-radius: 50%;
             overflow: hidden;
-            border: 3px solid rgba(230, 126, 34, 0.2);
+            border: 3px solid rgba(52, 152, 219, 0.2);
             transition: var(--transition);
             flex-shrink: 0;
+            background-color: #f0f0f0;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #f5f5f5;
-            color: var(--primary);
-            font-size: 2rem;
-            font-weight: bold;
         }
 
         .testimonial-card:hover .testimonial-avatar {
             border-color: var(--primary);
             transform: scale(1.05);
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .testimonial-avatar .avatar-initials {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
         }
 
         .author-info h4 {
@@ -557,7 +757,7 @@
         .form-group select:focus {
             border-color: var(--primary);
             outline: none;
-            box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.2);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
         }
 
         .submit-btn {
@@ -600,7 +800,7 @@
             padding: 3rem;
             box-shadow: var(--shadow-md);
             transition: var(--transition);
-            border-top: 5px solid rgba(230, 126, 34, 0.3);
+            border-top: 5px solid rgba(52, 152, 219, 0.3);
         }
 
         .contact-info:hover, .contact-form:hover {
@@ -704,6 +904,31 @@
             color: rgba(255, 255, 255, 0.8);
             line-height: 1.8;
             font-size: 1.05rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: var(--transition);
+            font-size: 1.2rem;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary);
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
         }
 
         .footer-col h3 {
@@ -824,7 +1049,7 @@
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
-            box-shadow: 0 5px 20px rgba(230, 126, 34, 0.3);
+            box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
             z-index: 99;
             transition: var(--transition);
             cursor: pointer;
@@ -840,7 +1065,7 @@
         .back-to-top:hover {
             transform: translateY(-5px);
             background-color: var(--primary-dark);
-            box-shadow: 0 10px 25px rgba(230, 126, 34, 0.4);
+            box-shadow: 0 10px 25px rgba(52, 152, 219, 0.4);
         }
 
         /* Responsive Adjustments */
@@ -867,7 +1092,11 @@
                 font-size: 2rem;
             }
             
-            .testimonial-grid {
+            .about-title {
+                font-size: 2.2rem;
+            }
+            
+            .facilities-grid, .testimonial-grid, .gallery-container {
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             }
             
@@ -902,6 +1131,20 @@
             .section-title {
                 font-size: 1.8rem;
             }
+
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .about-details {
+                text-align: left;
+            }
+
+            .about-title {
+                font-size: 2rem;
+            }
             
             .footer-col {
                 text-align: center;
@@ -915,6 +1158,10 @@
             .footer-col h3::after {
                 left: 50%;
                 transform: translateX(-50%);
+            }
+            
+            .social-links {
+                justify-content: center;
             }
             
             .whatsapp-float {
@@ -966,11 +1213,15 @@
                 margin-bottom: 3rem;
             }
             
-            .testimonial-card, .contact-info, .contact-form, .testimonial-form-container {
+            .about-title {
+                font-size: 1.8rem;
+            }
+            
+            .facility-card, .testimonial-card, .contact-info, .contact-form, .testimonial-form-container {
                 padding: 1.5rem;
             }
             
-            .testimonial-grid {
+            .facilities-grid, .testimonial-grid, .gallery-container {
                 grid-template-columns: 1fr;
             }
             
@@ -1031,13 +1282,15 @@
     <nav id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <img src="https://raw.githubusercontent.com/LenteraKarya/jualan-kita/main/assets/images/logo-jualan-kita.png" alt="Jualan Kita Logo">
-                <span>Owner Jualan Kita</span>
+                <img src="https://raw.githubusercontent.com/LenteraKarya/homestay/main/assets/images/logo-homestay.png" alt="Home Stay Premium Logo">
+                <span>Home Stay Premium</span>
             </a>
             
             <div class="nav-links">
                 <a href="#home" class="active">Beranda</a>
-                <a href="#jualankita">Jualan Kita</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#facilities">Fasilitas</a>
+                <a href="#gallery">Galeri</a>
                 <a href="#testimonials">Testimoni</a>
                 <a href="#contact">Kontak</a>
             </div>
@@ -1051,7 +1304,9 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <a href="#home">Beranda</a>
-        <a href="#jualankita">Jualan Kita</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#facilities">Fasilitas</a>
+        <a href="#gallery">Galeri</a>
         <a href="#testimonials">Testimoni</a>
         <a href="#contact">Kontak</a>
     </div>
@@ -1061,44 +1316,152 @@
     <header id="home">
         <div class="header-content">
             <div class="logo">
-                <img src="https://raw.githubusercontent.com/LenteraKarya/jualan-kita/main/assets/images/logo-jualan-kita.png" alt="Jualan Kita Logo">
+                <img src="https://raw.githubusercontent.com/LenteraKarya/homestay/main/assets/images/logo-homestay.png" alt="Home Stay Premium Logo">
                 <div class="logo-text">
-                    <span class="logo-main">Owner Jualan Kita</span>
-                    <span class="logo-sub">Update Bisnis UMKM Anda Bersama Lentera Karya</span>
+                    <span class="logo-main">Home Stay Premium</span>
+                    <span class="logo-sub">Pengalaman Menginap yang Tak Terlupakan</span>
                 </div>
             </div>
-            <p class="tagline fade-in">Panduan Profesional untuk Pengembangan UMKM di Platform Jualan Kita. Bersama kita wujudkan mimpi bisnis Anda dengan strategi yang tepat dan terukur.</p>
+            <p class="tagline fade-in">Temukan kenyamanan seperti di rumah sendiri dengan fasilitas premium dan pelayanan terbaik kami. Dengarkan apa kata tamu kami tentang pengalaman menginap mereka.</p>
             
             <div class="header-buttons fade-in delay-1">
-                <a href="#jualankita" class="btn btn-primary">
-                    <i class="fas fa-store"></i> Jelajahi Jualan Kita
+                <a href="#testimonials" class="btn btn-primary">
+                    <i class="fas fa-comment-alt"></i> Lihat Testimoni
                 </a>
                 <a href="#contact" class="btn btn-outline">
-                    <i class="fas fa-phone-alt"></i> Hubungi Kami
+                    <i class="fas fa-calendar-alt"></i> Pesan Sekarang
                 </a>
             </div>
         </div>
     </header>
     
-    <!-- Jualan Kita Section -->
-    <section class="jualan-kita" id="jualankita">
+    <!-- About Section -->
+    <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title fade-in">Tentang Jualan Kita</h2>
-            <div class="jk-content">
-                <p class="fade-in">Jualan Kita adalah platform e-commerce yang dirancang khusus untuk UMKM Indonesia dengan fitur-fitur lengkap untuk memulai dan mengembangkan bisnis online dengan mudah dan efektif.</p>
+            <h2 class="section-title fade-in">Tentang Home Stay Premium</h2>
+            <div class="about-content">
+                <div class="about-image-container fade-in">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Home Stay Premium" class="about-image">
+                </div>
+                <div class="about-details fade-in delay-1">
+                    <h3 class="about-title">Home Stay Premium</h3>
+                    <span class="about-subtitle">Penginapan Berkualitas dengan Sentuhan Personal</span>
+                    <div class="about-description">
+                        <p>Home Stay Premium hadir untuk memberikan pengalaman menginap yang berbeda dari hotel biasa. Kami menawarkan akomodasi yang nyaman dengan sentuhan personal layaknya di rumah sendiri, namun dengan fasilitas dan pelayanan setara hotel bintang.</p>
+                        <p>Terletak di lokasi strategis dengan akses mudah ke berbagai destinasi wisata, Home Stay Premium menjadi pilihan utama bagi wisatawan yang mencari kenyamanan dan privasi selama berlibur atau bekerja.</p>
+                        <p>Setiap unit kami dirancang dengan cermat untuk memenuhi kebutuhan tamu modern, mulai dari keluarga, pasangan, hingga pebisnis yang membutuhkan kenyamanan ekstra selama perjalanan.</p>
+                        <p>Kami bangga dengan pelayanan ramah dan profesional dari staf kami yang siap membantu 24 jam untuk memastikan pengalaman menginap Anda sempurna dari awal hingga akhir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Facilities Section -->
+    <section class="facilities" id="facilities">
+        <div class="container">
+            <h2 class="section-title fade-in">Fasilitas Unggulan Kami</h2>
+            <div class="facilities-grid">
+                <div class="facility-card fade-in">
+                    <div class="facility-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3 class="facility-title">WiFi Cepat</h3>
+                    <p>Internet berkecepatan tinggi dengan jangkauan di seluruh area home stay, termasuk ruang tamu, kamar tidur, dan area kolam renang.</p>
+                </div>
+                <div class="facility-card fade-in delay-1">
+                    <div class="facility-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3 class="facility-title">Kolam Renang Pribadi</h3>
+                    <p>Kolam renang dengan air bersih yang dirawat secara rutin, tersedia di setiap unit untuk kenyamanan dan privasi tamu.</p>
+                </div>
+                <div class="facility-card fade-in delay-2">
+                    <div class="facility-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="facility-title">Dapur Lengkap</h3>
+                    <p>Dapur modern dengan peralatan masak lengkap, memungkinkan Anda menyiapkan makanan sendiri seperti di rumah.</p>
+                </div>
+                <div class="facility-card fade-in delay-1">
+                    <div class="facility-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="facility-title">Parkir Pribadi</h3>
+                    <p>Area parkir aman dan terlindung untuk kendaraan pribadi Anda, termasuk fasilitas charging untuk kendaraan listrik.</p>
+                </div>
+                <div class="facility-card fade-in delay-2">
+                    <div class="facility-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3 class="facility-title">Room Service 24 Jam</h3>
+                    <p>Layanan kamar 24 jam dengan menu makanan lezat dan kebutuhan lainnya yang bisa dipesan kapan saja.</p>
+                </div>
+                <div class="facility-card fade-in delay-3">
+                    <div class="facility-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="facility-title">Spa & Wellness</h3>
+                    <p>Layanan pijat dan perawatan tubuh profesional untuk membantu Anda bersantai setelah seharian beraktivitas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title fade-in">Galeri Home Stay</h2>
+            <p class="fade-in" style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">Lihat sekilas keindahan dan kenyamanan yang kami tawarkan melalui galeri foto Home Stay Premium kami.</p>
+            
+            <div class="gallery-container">
+                <div class="gallery-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1582719471389-93d765d452d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kamar Tidur" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Kamar Tidur Premium</h3>
+                        <p>Tempat istirahat yang nyaman dengan kasur berkualitas tinggi</p>
+                    </div>
+                </div>
                 
-                <p class="fade-in delay-1">Sebagai owner dan konsultan ahli Jualan Kita, saya dapat membantu Anda:</p>
-                <ul class="fade-in delay-2">
-                    <li>Memahami semua fitur dan keunggulan platform Jualan Kita secara mendalam</li>
-                    <li>Mengoptimalkan penggunaan platform untuk bisnis Anda dengan strategi khusus</li>
-                    <li>Mengembangkan strategi penjualan yang disesuaikan dengan produk dan target pasar Anda</li>
-                    <li>Menganalisis performa toko berbasis digital</li>
-                    <li>Membangun branding yang kuat untuk produk Anda di platform Jualan Kita</li>
-                </ul>
+                <div class="gallery-item fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Ruang Tamu" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Ruang Tamu Elegan</h3>
+                        <p>Area bersantai dengan desain modern dan nyaman</p>
+                    </div>
+                </div>
                 
-                <a href="https://lenterakarya.github.io/jualan-kita/" class="btn btn-primary fade-in delay-3" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> Kunjungi Website Jualan Kita
-                </a>
+                <div class="gallery-item fade-in delay-2">
+                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Kolam Renang" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Kolam Renang Pribadi</h3>
+                        <p>Area berenang eksklusif dengan pemandangan indah</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Dapur" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Dapur Modern</h3>
+                        <p>Fasilitas memasak lengkap untuk kebutuhan kuliner Anda</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in delay-2">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Area Makan" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Area Makan</h3>
+                        <p>Tempat menikmati hidangan bersama keluarga atau teman</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item fade-in delay-3">
+                    <img src="https://images.unsplash.com/photo-1600566752227-8f5a6a6c5c5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pemandangan" class="gallery-image">
+                    <div class="gallery-caption">
+                        <h3>Pemandangan Indah</h3>
+                        <p>View menakjubkan dari balkon unit home stay kami</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1106,60 +1469,108 @@
     <!-- Testimonials Section -->
     <section class="testimonials" id="testimonials">
         <div class="container">
-            <h2 class="section-title fade-in">Testimoni Klien</h2>
+            <h2 class="section-title fade-in">Testimoni Tamu Kami</h2>
             <div class="testimonial-grid">
                 <div class="testimonial-card fade-in">
                     <p class="testimonial-text">
-                        "Sebagai pemula di Jualan Kita, bimbingan dari Owner sangat membantu. Toko saya yang awalnya sepi sekarang bisa mencapai 50 pesanan per minggu. Strategi pricing dan promosinya benar-benar efektif!"
+                        "Pengalaman menginap yang luar biasa! Kamar sangat bersih, nyaman, dan fasilitasnya lengkap. Stafnya ramah dan sangat membantu. Kolam renang pribadi menjadi favorit anak-anak kami. Pasti akan kembali lagi!"
                     </p>
                     <div class="rating">★★★★★</div>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">
-                            KS
+                            <div class="avatar-initials">SR</div>
                         </div>
                         <div class="author-info">
-                            <h4>Kedai Siti</h4>
-                            <p>Kedai Kue Tradisional</p>
+                            <h4>Siti Rahma</h4>
+                            <p>Keluarga - 5 Malam</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card fade-in delay-1">
                     <p class="testimonial-text">
-                        "Pelatihan optimasi produk dari Owner Jualan Kita sangat detail. Foto produk saya sekarang terlihat profesional dan konversi penjualan meningkat 2x lipat dalam sebulan. Recommended banget!"
+                        "Home Stay Premium benar-benar melebihi ekspektasi. Desain interiornya modern dan elegan, tempat tidur sangat nyaman, dan WiFi-nya cepat. Lokasinya strategis dekat dengan pusat kota tapi tetap tenang. Sangat direkomendasikan!"
                     </p>
                     <div class="rating">★★★★★</div>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">
-                            BK
+                            <div class="avatar-initials">BS</div>
                         </div>
                         <div class="author-info">
-                            <h4>Budi Kerajinan</h4>
-                            <p>Pengrajin Tangan</p>
+                            <h4>Budi Santoso</h4>
+                            <p>Wisatawan Bisnis - 3 Malam</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="testimonial-card fade-in delay-2">
                     <p class="testimonial-text">
-                        "Saya sangat terkesan dengan pengetahuan mendalam Owner tentang platform Jualan Kita. Berkat strateginya, omzet toko saya naik 300% dalam 3 bulan. Kini saya bisa fokus mengembangkan bisnis."
+                        "Ini adalah kali kedua kami menginap di sini dan pengalamannya tetap konsisten bagus. Pelayanan 24 jam sangat membantu ketika kami tiba larut malam. Dapur lengkap memudahkan kami menyiapkan makanan untuk anak kecil. Terima kasih!"
                     </p>
                     <div class="rating">★★★★★</div>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">
-                            DF
+                            <div class="avatar-initials">DL</div>
                         </div>
                         <div class="author-info">
-                            <h4>Dewi Fashion</h4>
-                            <p>Brand Fashion Lokal</p>
+                            <h4>Dewi Lestari</h4>
+                            <p>Keluarga - 7 Malam</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in delay-1">
+                    <p class="testimonial-text">
+                        "Tempat yang sempurna untuk staycation! Kolam renang pribadi membuat liburan kami lebih istimewa. Desain kamar sangat Instagramable dan bersih. Stafnya responsif dan selalu siap membantu. Akan booking lagi untuk liburan berikutnya."
+                    </p>
+                    <div class="rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <div class="avatar-initials">RW</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Rina Wijaya</h4>
+                            <p>Pasangan - 2 Malam</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in delay-2">
+                    <p class="testimonial-text">
+                        "Sebagai pebisnis yang sering traveling, saya sangat menghargai kenyamanan dan fasilitas kerja di Home Stay Premium. Meja kerja ergonomis, WiFi stabil, dan suasana yang tenang membuat produktivitas kerja tetap terjaga."
+                    </p>
+                    <div class="rating">★★★★☆</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <div class="avatar-initials">AK</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Andi Kurniawan</h4>
+                            <p>Pebisnis - 10 Malam</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card fade-in delay-3">
+                    <p class="testimonial-text">
+                        "Kami menginap dengan grup besar (3 keluarga) dan sangat puas dengan pelayanan Home Stay Premium. Unitnya luas, bersih, dan fasilitasnya lengkap. Anak-anak senang dengan kolam renangnya. Staf membantu dari check-in sampai check-out."
+                    </p>
+                    <div class="rating">★★★★★</div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <div class="avatar-initials">HP</div>
+                        </div>
+                        <div class="author-info">
+                            <h4>Hendra Pratama</h4>
+                            <p>Grup Keluarga - 4 Malam</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- Testimonial Form -->
-            <div class="testimonial-form-container fade-in delay-3">
-                <h3>Tambah Testimoni Anda</h3>
+            <div class="testimonial-form-container fade-in delay-4">
+                <h3>Bagikan Pengalaman Anda</h3>
                 <form class="testimonial-form" id="testimonialForm">
                     <div class="form-row">
                         <div class="form-group">
@@ -1167,24 +1578,37 @@
                             <input type="text" id="testimonial-name" required placeholder="Masukkan nama lengkap Anda">
                         </div>
                         <div class="form-group">
-                            <label for="testimonial-business">Jenis Bisnis</label>
-                            <input type="text" id="testimonial-business" required placeholder="Jenis bisnis Anda">
+                            <label for="testimonial-stay">Jenis Kunjungan</label>
+                            <select id="testimonial-stay" required>
+                                <option value="" disabled selected>Pilih jenis kunjungan</option>
+                                <option value="family">Keluarga</option>
+                                <option value="couple">Pasangan</option>
+                                <option value="business">Bisnis</option>
+                                <option value="friends">Teman</option>
+                                <option value="solo">Solo Traveler</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="testimonial-duration">Durasi Menginap</label>
+                            <input type="text" id="testimonial-duration" required placeholder="Contoh: 2 Malam">
+                        </div>
+                        <div class="form-group">
+                            <label for="testimonial-rating">Rating</label>
+                            <select id="testimonial-rating" required>
+                                <option value="" disabled selected>Pilih rating</option>
+                                <option value="5">★★★★★ - Sangat Puas</option>
+                                <option value="4">★★★★☆ - Puas</option>
+                                <option value="3">★★★☆☆ - Cukup</option>
+                                <option value="2">★★☆☆☆ - Kurang Puas</option>
+                                <option value="1">★☆☆☆☆ - Tidak Puas</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="testimonial-rating">Rating</label>
-                        <select id="testimonial-rating" required>
-                            <option value="" disabled selected>Pilih rating</option>
-                            <option value="5">★★★★★ - Sangat Puas</option>
-                            <option value="4">★★★★☆ - Puas</option>
-                            <option value="3">★★★☆☆ - Cukup</option>
-                            <option value="2">★★☆☆☆ - Kurang Puas</option>
-                            <option value="1">★☆☆☆☆ - Tidak Puas</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
                         <label for="testimonial-message">Testimoni Anda</label>
-                        <textarea id="testimonial-message" required placeholder="Bagikan pengalaman Anda menggunakan layanan kami"></textarea>
+                        <textarea id="testimonial-message" required placeholder="Bagikan pengalaman menginap Anda di Home Stay Premium"></textarea>
                     </div>
                     <button type="submit" class="submit-btn">
                         <i class="fas fa-paper-plane"></i> Kirim Testimoni
@@ -1205,33 +1629,33 @@
                         <i class="fas fa-map-marker-alt contact-icon"></i>
                         <div class="contact-text">
                             <h4>Alamat</h4>
-                            <p>Jl. PB Sudirman, Desa Wringin Anom<br>Kec. Panarukan, Kab. Situbondo (68351)<br>Provinsi Jawa Timur</p>
+                            <p>Jl. Raya Kuta No. 123<br>Badung, Bali 80361<br>Indonesia</p>
                         </div>
                     </div>
                     <div class="contact-detail">
                         <i class="fas fa-phone-alt contact-icon"></i>
                         <div class="contact-text">
                             <h4>Telepon/WhatsApp</h4>
-                            <p>+62 878 6561 4222</p>
+                            <p>+62 361 1234567</p>
                         </div>
                     </div>
                     <div class="contact-detail">
                         <i class="fas fa-envelope contact-icon"></i>
                         <div class="contact-text">
                             <h4>Email</h4>
-                            <p>konsultasi@lenterakarya.com</p>
+                            <p>info@homestaypremium.com</p>
                         </div>
                     </div>
                     <div class="contact-detail">
                         <i class="fas fa-clock contact-icon"></i>
                         <div class="contact-text">
                             <h4>Jam Operasional</h4>
-                            <p>Senin - Jumat: 08.00 - 17.00<br>Sabtu: 09.00 - 15.00</p>
+                            <p>Setiap Hari: 24 Jam<br>Resepsionis: 07.00 - 22.00</p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-form fade-in delay-1">
-                    <h3>Kirim Pesan</h3>
+                    <h3>Form Pemesanan</h3>
                     <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Nama Lengkap</label>
@@ -1242,21 +1666,36 @@
                             <input type="email" id="email" required placeholder="Masukkan alamat email aktif">
                         </div>
                         <div class="form-group">
-                            <label for="subject">Subjek</label>
-                            <select id="subject" required>
-                                <option value="" disabled selected>Pilih subjek pesan Anda</option>
-                                <option value="konsultasi">Konsultasi Bisnis</option>
-                                <option value="jualankita">Pertanyaan Jualan Kita</option>
-                                <option value="pelatihan">Pelatihan & Workshop</option>
-                                <option value="lainnya">Lainnya</option>
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" required placeholder="Masukkan nomor telepon/WhatsApp">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Check-in</label>
+                                <input type="date" id="checkin" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check-out</label>
+                                <input type="date" id="checkout" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Jumlah Tamu</label>
+                            <select id="guests" required>
+                                <option value="" disabled selected>Pilih jumlah tamu</option>
+                                <option value="1">1 Orang</option>
+                                <option value="2">2 Orang</option>
+                                <option value="3">3 Orang</option>
+                                <option value="4">4 Orang</option>
+                                <option value="5+">5+ Orang</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Pesan Anda</label>
-                            <textarea id="message" required placeholder="Tulis pesan Anda secara detail"></textarea>
+                            <label for="message">Pesan Tambahan</label>
+                            <textarea id="message" placeholder="Permintaan khusus atau pertanyaan"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                            <i class="fas fa-paper-plane"></i> Kirim Permintaan
                         </button>
                     </form>
                 </div>
@@ -1270,17 +1709,25 @@
             <div class="footer-container">
                 <div class="footer-col footer-about fade-in">
                     <a href="#" class="footer-logo">
-                        <img src="https://raw.githubusercontent.com/LenteraKarya/jualan-kita/main/assets/images/logo-jualan-kita.png" alt="Jualan Kita Logo">
-                        <span>Owner Jualan Kita</span>
+                        <img src="https://raw.githubusercontent.com/LenteraKarya/homestay/main/assets/images/logo-homestay.png" alt="Home Stay Premium Logo">
+                        <span>Home Stay Premium</span>
                     </a>
-                    <p>Layanan konsultasi profesional untuk membantu UMKM berkembang di platform Jualan Kita dengan strategi yang terukur dan efektif, langsung dari pemilik platform.</p>
+                    <p>Memberikan pengalaman menginap premium dengan kenyamanan seperti di rumah sendiri. Fasilitas lengkap, pelayanan terbaik, dan lokasi strategis untuk liburan atau bisnis Anda.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/6281234567890" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-col fade-in delay-1">
                     <h3>Tautan Cepat</h3>
                     <ul class="footer-links">
-                        <li><i class="fas fa-chevron-right"></i><a href="https://lenterakarya.github.io/jualan-kita/" target="_blank">Beranda</a></li>
-                        <li><i class="fas fa-chevron-right"></i><a href="#jualankita">Jualan Kita</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#home">Beranda</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#about">Tentang Kami</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#facilities">Fasilitas</a></li>
+                        <li><i class="fas fa-chevron-right"></i><a href="#gallery">Galeri</a></li>
                         <li><i class="fas fa-chevron-right"></i><a href="#testimonials">Testimoni</a></li>
                         <li><i class="fas fa-chevron-right"></i><a href="#contact">Kontak</a></li>
                     </ul>
@@ -1289,22 +1736,22 @@
                 <div class="footer-col fade-in delay-2">
                     <h3>Hubungi Kami</h3>
                     <div class="footer-links">
-                        <div class="contact-info-item"><i class="fas fa-phone"></i> +62 878 6561 4222</div>
-                        <div class="contact-info-item"><i class="fas fa-envelope"></i> konsultasi@lenterakarya.com</div>
-                        <div class="contact-info-item"><i class="fas fa-map-marker-alt"></i> Situbondo, Jawa Timur</div>
-                        <div class="contact-info-item"><i class="fas fa-clock"></i> Senin-Sabtu, 08.00-17.00</div>
+                        <div class="contact-info-item"><i class="fas fa-phone"></i> +62 361 1234567</div>
+                        <div class="contact-info-item"><i class="fas fa-envelope"></i> info@homestaypremium.com</div>
+                        <div class="contact-info-item"><i class="fas fa-map-marker-alt"></i> Jl. Raya Kuta No. 123, Bali</div>
+                        <div class="contact-info-item"><i class="fas fa-clock"></i> Setiap Hari, 24 Jam</div>
                     </div>
                 </div>
             </div>
             
             <div class="copyright fade-in delay-3">
-                &copy; 2025 Owner Jualan Kita. Semua hak dilindungi. | Dibangun dengan <i class="fas fa-heart" style="color: #e74c3c;"></i> untuk UMKM Indonesia
+                &copy; 2025 Home Stay Premium. Semua hak dilindungi. | Dibangun dengan <i class="fas fa-heart" style="color: #e74c3c;"></i> untuk Kenyamanan Anda
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/6287865614222" class="whatsapp-float" target="_blank" aria-label="Chat via WhatsApp">
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank" aria-label="Chat via WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -1313,11 +1760,23 @@
         <i class="fas fa-arrow-up"></i>
     </div>
 
+    <!-- Audio for button clicks -->
+    <audio id="buttonSound" src="https://github.com/LenteraKarya/homestay/raw/main/assets/audio/audiotombol.mp3"></audio>
+
     <script>
         // Mobile Menu Toggle
         const mobileMenuToggle = document.getElementById('mobileMenuToggle');
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const buttonSound = document.getElementById('buttonSound');
+
+        // Play sound on button clicks
+        document.querySelectorAll('button, a.btn, .submit-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                buttonSound.currentTime = 0;
+                buttonSound.play();
+            });
+        });
 
         mobileMenuToggle.addEventListener('click', function() {
             mobileMenu.classList.toggle('active');
@@ -1365,47 +1824,22 @@
             });
         });
 
-        // Form submission with actual email and WhatsApp integration
+        // Form submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
+            // Simulate form submission
             const submitBtn = this.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim...';
             submitBtn.disabled = true;
             
-            // Get form data
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Send to email (using FormSubmit.co or similar service)
-            fetch('https://formsubmit.co/ajax/konsultasi@lenterakarya.com', {
-                method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email,
-                    subject: formData.subject,
-                    message: formData.message
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Also send to WhatsApp
-                const whatsappMessage = `*Pesan Baru dari Website*%0A%0ANama: ${formData.name}%0AEmail: ${formData.email}%0ASubjek: ${formData.subject}%0APesan: ${formData.message}`;
-                window.open(`https://wa.me/6287865614222?text=${whatsappMessage}`, '_blank');
-                
-                // Show success message
+            // Simulate API call
+            setTimeout(() => {
                 submitBtn.innerHTML = '<i class="fas fa-check"></i> Terkirim!';
                 
+                // Show success message
                 const successAlert = document.createElement('div');
                 successAlert.style.position = 'fixed';
                 successAlert.style.top = '20px';
@@ -1417,7 +1851,7 @@
                 successAlert.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
                 successAlert.style.zIndex = '1000';
                 successAlert.style.animation = 'fadeIn 0.5s ease';
-                successAlert.innerHTML = '<i class="fas fa-check-circle"></i> Pesan Anda telah terkirim! Kami akan segera menghubungi Anda.';
+                successAlert.innerHTML = '<i class="fas fa-check-circle"></i> Permintaan pemesanan Anda telah terkirim! Kami akan segera menghubungi Anda untuk konfirmasi.';
                 
                 document.body.appendChild(successAlert);
                 
@@ -1435,18 +1869,10 @@
                     submitBtn.innerHTML = originalText;
                     submitBtn.disabled = false;
                 }, 2000);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                submitBtn.innerHTML = '<i class="fas fa-times"></i> Gagal';
-                setTimeout(() => {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                }, 2000);
-            });
+            }, 1500);
         });
 
-        // Testimonial form submission with actual email and WhatsApp integration
+        // Testimonial form submission
         document.getElementById('testimonialForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -1456,38 +1882,11 @@
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Mengirim...';
             submitBtn.disabled = true;
             
-            // Get form data
-            const formData = {
-                name: document.getElementById('testimonial-name').value,
-                business: document.getElementById('testimonial-business').value,
-                rating: document.getElementById('testimonial-rating').value,
-                message: document.getElementById('testimonial-message').value
-            };
-            
-            // Send to email (using FormSubmit.co or similar service)
-            fetch('https://formsubmit.co/ajax/konsultasi@lenterakarya.com', {
-                method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({
-                    name: formData.name,
-                    business: formData.business,
-                    rating: formData.rating,
-                    message: formData.message,
-                    _subject: 'Testimoni Baru dari Website'
-                })
-            })
-            .then(response => response.json())
-            .then(data => {
-                // Also send to WhatsApp
-                const whatsappMessage = `*Testimoni Baru*%0A%0ANama: ${formData.name}%0ABisnis: ${formData.business}%0ARating: ${'★'.repeat(formData.rating)}%0ATestimoni: ${formData.message}`;
-                window.open(`https://wa.me/6287865614222?text=${whatsappMessage}`, '_blank');
-                
-                // Show success message
+            // Simulate API call
+            setTimeout(() => {
                 submitBtn.innerHTML = '<i class="fas fa-check"></i> Terkirim!';
                 
+                // Show success message
                 const successAlert = document.createElement('div');
                 successAlert.style.position = 'fixed';
                 successAlert.style.top = '20px';
@@ -1517,15 +1916,7 @@
                     submitBtn.innerHTML = originalText;
                     submitBtn.disabled = false;
                 }, 2000);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                submitBtn.innerHTML = '<i class="fas fa-times"></i> Gagal';
-                setTimeout(() => {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                }, 2000);
-            });
+            }, 1500);
         });
 
         // Navbar scroll effect
